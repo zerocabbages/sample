@@ -1,1 +1,191 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+ body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+  }
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  .flip-card-back {
+    background-color: #2980b9;
+    opacity: 0.94;
+    padding-top: 20%;
+    color: white;
+    transform: rotateY(180deg);
+   }
+   
+   <h2 style="text-align: center;font-size: 40px;font-family: Georgia, 'Times New Roman', Times, serif;font-weight: bolder;">Our Bikes</h2><br>
+<div class="card-columns mx-auto d-flex justify-content-center col-12">
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <div class="card" style="width: 18rem;height: 18rem;">
+          <img class="card-img-top" src="../../assets/enfield.jfif" alt="Planet Earth">
+          <div class="card-body">
+            
+          </div>
+        </div>
+      </div>
+      <div class="flip-card-back">
+        <h5 class="card-title">Royal Enfield</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-light">Click to Learn More</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <div class="card" style="width: 18rem;height: 18rem;">
+          <img class="card-img-top" src="../../assets/hd.jfif" alt="Planet Earth">
+          <div class="card-body">
+            
+          </div>
+        </div>
+      </div>
+      <div class="flip-card-back">
+        <h5 class="card-title">Harley Davidson</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-light">Click to Learn More</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <div class="card" style="width: 18rem;height: 18rem;">
+          <img class="card-img-top" src="../../assets/ktm.jfif" alt="Planet Earth">
+          <div class="card-body">
+            
+          </div>
+        </div>
+      </div>
+      <div class="flip-card-back">
+        <h5 class="card-title">KTM</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-light">Click to Learn More</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <div class="card" style="width: 18rem;height: 18rem;">
+          <img class="card-img-top" src="../../assets/kawasaki.jfif" alt="Planet Earth">
+          <div class="card-body">
+            
+          </div>
+        </div>
+      </div>
+      <div class="flip-card-back">
+        <h5 class="card-title">Kawasaki</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-light">Click to Learn More</a>
+      </div>
+    </div>
+  </div>
+</div>
+  <br>
+  <div class="card-columns mx-auto d-flex justify-content-center col-12">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <div class="card" style="width: 18rem;height: 18rem;">
+            <img class="card-img-top" src= "../../assets/yamaha.jfif" alt="Planet Earth" style="object-fit: cover;">
+            <div class="card-body">
+              
+            </div>
+          </div>
+        </div>
+        <div class="flip-card-back">
+          <h5 class="card-title">Yamaha</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-light">Click to Learn More</a>
+        </div>
+      </div>
+    </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <div class="card" style="width: 18rem;height: 18rem;">
+              <img class="card-img-top" src="../../assets/triumph.jfif" alt="Planet Earth">
+              <div class="card-body">
+                
+              </div>
+            </div>
+          </div>
+          <div class="flip-card-back">
+            <h5 class="card-title">Triumph</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-light">Click to Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <div class="card" style="width: 18rem;height: 18rem;">
+              <img class="card-img-top" src="../../assets/honda.jfif" alt="Planet Earth">
+              <div class="card-body">
+                
+              </div>
+            </div>
+          </div>
+          <div class="flip-card-back">
+            <h5 class="card-title">Honda</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-light">Click to Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <div class="card" style="width: 18rem;height: 18rem;">
+              <img class="card-img-top" src="../../assets/suzuki.png" alt="Planet Earth">
+              <div class="card-body">
+                
+              </div>
+            </div>
+          </div>
+          <div class="flip-card-back">
+            <h5 class="card-title">Suzuki</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-light">Click to Learn More</a>
+          </div>
+        </div>
+      </div>
+      </div>
+    </body>
+   </div>
